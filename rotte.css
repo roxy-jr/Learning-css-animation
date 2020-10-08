@@ -1,0 +1,56 @@
+*{
+    paddinG:0;
+    margin:0;
+}
+body{
+    background-color:rgb(12, 8, 8);
+}
+.trans{
+    width:70px;
+    height:70px;
+    background-color: rgb(113, 46, 223);
+    margin:270px auto;
+    transition:transform 0.4s ease; 
+    animation:a1 0.4s linear infinite;
+}
+.transd{
+    width:70px;
+    height:70px;
+    background-color:#d6216d;
+    margin:-320px auto;
+    transition:transform 2.3s ease; 
+    z-index: inherit 1;
+    animation:a2 1.4s linear infinite;
+}
+.transdy{
+    width:70px;
+    height:70px;
+    background-color:#dad614;
+    margin:270px auto;
+    transition:transform 2.3s ease; 
+    animation:a3 0.3s linear infinite;
+}
+@keyframes a1{
+    0%{
+        transform:rotate(80deg);
+    }
+    50%{
+        transform:rotate(80deg);
+    }
+}
+@keyframes a2{
+    0%{
+        transform:rotate(60deg);
+    }
+    50%{
+        transform:rotate(-360deg);
+    }
+}
+@keyframes a3{
+    0%{
+        transform:rotate(-80deg);
+    }
+    50%{
+        transform:rotate(-80deg);
+    }
+}
