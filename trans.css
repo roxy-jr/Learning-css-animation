@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    background:#0a0b0c;
+}
+.trans{
+    width: 20px;
+    height: 20px;
+    
+    display:inline-block;
+    background:rgb(26, 228, 167);
+    margin:220px 20px;
+    transition:transform 1.6s ease-in-out;
+    animation:a1 2.6s linear infinite;
+
+}
+.trans:hover{
+    background: rgb(47, 5, 146);
+    transform:rotate(360deg);
+    transition:transform 2.6s ease-in-out; 
+   
+}
+@keyframes a1{
+    to{
+        transform:translate(1400px,36px);
+    }
+}
