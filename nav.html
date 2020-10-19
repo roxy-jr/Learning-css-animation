@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>responsive nav</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="navs.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="menu-right">
+                
+                <span onclick = "myFunction()">&#9776;</span>
+                <ul id="menu">
+                    <li><a href="#">HOME</a></li> 
+                    <li><a href="#">ABOUT</a></li> 
+                    <li><a href="#">SERVICE</a></li> 
+                    <li><a href="#">GALLERY</a></li> 
+                    <li><a href="#">CONTACT</a></li> 
+                </ul>
+            </div>
+        </div>
+        <script>
+            function myFunction(){
+                var x = document.getElementById("menu");
+   
+                if(x.style.display == "block"){
+                  x.style.display = "none";
+                 
+                }
+                else{
+                    x.style.display = "block";
+                }
+   
+            }
+        </script>
+   
+    </body>
+</html>
